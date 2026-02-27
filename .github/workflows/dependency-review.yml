@@ -1,7 +1,7 @@
 name: 'Dependency Review'
 on:
   pull_request:
-    branches: ['dependency-review']
+    branches: ['main']
 
 permissions:
   contents: read
