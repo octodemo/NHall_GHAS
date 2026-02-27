@@ -1,0 +1,15 @@
+# Python dependencies
+# WARNING: These versions contain known critical vulnerabilities
+# and are intentionally pinned here for security testing purposes.
+
+# CVE-2021-34552 (CRITICAL) - Buffer overflow / arbitrary code execution
+Pillow==8.2.0
+
+# CVE-2020-14343 (CRITICAL) - Arbitrary code execution via unsafe YAML load
+PyYAML==5.1
+
+# CVE-2021-35042 (CRITICAL) - SQL injection via QuerySet.order_by()
+Django==2.2.0
+
+# CVE-2019-11324 (CRITICAL) - Certificate verification bypass
+urllib3==1.24.1
