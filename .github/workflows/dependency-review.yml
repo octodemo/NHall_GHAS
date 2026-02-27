@@ -16,3 +16,5 @@ jobs:
         uses: actions/dependency-review-action@v4
         with:
           deny-licenses: AGPL-3.0
+          fail-on-severity: critical
+      
