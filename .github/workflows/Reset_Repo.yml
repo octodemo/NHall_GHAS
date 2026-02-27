@@ -9,7 +9,7 @@ on:
 
 jobs:
   Reset_Repo:
-    runs-on: 'GitHub_Jack_PowerRunner'
+    runs-on: ubuntu-latest
     permissions:
       actions: read
       contents: write
