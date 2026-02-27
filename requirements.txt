@@ -2,6 +2,8 @@
 # WARNING: These versions contain known critical vulnerabilities
 # and are intentionally pinned here for security testing purposes.
 
+#trigger dep review plz
+
 # CVE-2021-34552 (CRITICAL) - Buffer overflow / arbitrary code execution
 Pillow==8.2.0
 
