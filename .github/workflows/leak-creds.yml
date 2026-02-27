@@ -1,0 +1,11 @@
+name: Echo String Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  echo-string:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo a string
+        run: echo "oh no you stole my key - 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"

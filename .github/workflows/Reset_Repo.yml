@@ -1,0 +1,26 @@
+name: Reset Repository
+on:
+  workflow_dispatch:
+    inputs:
+      branch_name:
+        description: 'Resetting Repo to Clean state'     
+        required: true
+        default: 'main'
+
+jobs:
+  Reset_Repo:
+    runs-on: 'GitHub_Jack_PowerRunner'
+    permissions:
+      actions: read
+      contents: write
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Reset Repo to clean state
+      run: |
+        echo "${{ secrets.REPORESET }}" | gh auth login --with-token
+        chmod +x ./repo_reset/reset.sh
+        sudo ./repo_reset/reset.sh
+      
